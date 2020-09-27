@@ -1,6 +1,6 @@
 {
   "name": "@periodica/linters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Linter configs",
   "repository": "git@bitbucket.org:periodica/linters.git",
   "author": {
