@@ -1,6 +1,6 @@
 {
   "name": "@periodica/linters",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Linter configs",
   "repository": "git@bitbucket.org:periodica/linters.git",
   "author": {
@@ -10,6 +10,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
