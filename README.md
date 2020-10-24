@@ -2,6 +2,18 @@
 
 ## Install
 
+### Yarn
+
+```
+yarn add -D @periodica-press/linters
+```
+
+### NPM
+
+```
+npm i -D @periodica-press/linters
+```
+
 ## ESLint + Prettier
 
 **`.eslintrc.js`**
