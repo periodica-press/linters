@@ -14,16 +14,15 @@ yarn add -D @periodica-press/linters
 npm i -D @periodica-press/linters
 ```
 
+Package include `eslint@8` and `prettier@2` dependencies, so you should remove eslint, prettier internal dependencies from your project `package.json`.
+
 ## ESLint + Prettier
 
 **`.eslintrc.js`**
 
 ```
 module.exports = {
-    extends: [
-        './node_modules/@periodica/linters/eslint/base/prettier',
-        './node_modules/@periodica/linters/eslint/react',
-    ],
+  extends: ['@periodica-press/linters/app'],
 };
 ```
 
@@ -31,6 +30,6 @@ module.exports = {
 
 ```
 module.exports = {
-    ...require('@periodica/linters/prettier/prettier.config'),
+    ...require('@periodica/linters/prettier'),
 };
 ```

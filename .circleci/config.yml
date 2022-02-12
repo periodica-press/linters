@@ -11,7 +11,7 @@ jobs:
           message: "BUILD PACKAGE - $CIRCLE_PROJECT_REPONAME - << pipeline.git.branch >> - START"
       - node/install:
           install-yarn: true
-          node-version: "12"
+          node-version: "16"
       - run:
           command: npm config set '//npm.pkg.github.com/:_authToken' "${NPM_TOKEN}"
       - node/install-packages:
