@@ -22,7 +22,7 @@ Package include `eslint@8` and `prettier@2` dependencies, so you should remove e
 
 ```
 module.exports = {
-  extends: ['@periodica-press/linters/app'],
+  extends: ['./node_modules/@periodica-press/linters/app'],
 };
 ```
 
