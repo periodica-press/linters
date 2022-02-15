@@ -30,6 +30,6 @@ module.exports = {
 
 ```
 module.exports = {
-    ...require('@periodica/linters/prettier'),
+    ...require('@periodica-press/linters/prettier'),
 };
 ```
