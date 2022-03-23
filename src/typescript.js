@@ -83,7 +83,7 @@ module.exports = {
           'error',
           {
             selector: 'default',
-            format: ['camelCase', 'PascalCase'],
+            format: ['camelCase', 'PascalCase', 'snake_case'],
             leadingUnderscore: 'allow',
             trailingUnderscore: 'allow',
           },
