@@ -21,6 +21,9 @@ jobs:
       - name: install yarn
         run: npm i -g yarn
 
+      - name: bootstrap
+        run: yarn
+
       - name: config package registry
         run: npm config set '//npm.pkg.github.com/:_authToken' "${GH_TOKEN}"
 
