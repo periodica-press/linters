@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - uses: actions/checkout@v3
 
@@ -22,7 +22,7 @@ jobs:
         run: npm i -g yarn
 
       - name: config package registry
-        run: npm config set '//npm.pkg.github.com/:_authToken' "${NPM_TOKEN}"
+        run: npm config set '//npm.pkg.github.com/:_authToken' "${GH_TOKEN}"
 
       - name: publish
         run: npx semantic-release
